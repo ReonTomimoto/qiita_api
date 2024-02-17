@@ -30,12 +30,12 @@ const SearchInput = (props: SearchInputType) => {
       <Input placeholder="本文キーワード" func={setBodyInput} />
       <IoIosSearch
         onClick={handleSearch}
-        className="text-4xl md:mx-auto mx-4 hover:cursor-pointer"
+        className="text-4xl md:mx-auto mx-4 my-1 hover:cursor-pointer"
       />
       {isApiKey ? <Input placeholder="APIキー" func={setApiKey} /> : <div></div>}
       <IoMdSettings
         onClick={() => setIsApiKey(!isApiKey)}
-        className="text-4xl md:mx-auto mx-4 hover:cursor-pointer"
+        className="text-4xl md:mx-auto mx-4 my-1 hover:cursor-pointer"
       />
     </div>
   );

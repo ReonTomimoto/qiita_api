@@ -13,7 +13,7 @@ export default function Input(props: InputType) {
       type="text"
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => func(e.target.value)}
       placeholder={placeholder}
-      className="h-10 w-1/6 md:w-full md:text-center px-3 mx-2 my-2"
+      className="h-10 w-1/6 md:w-full md:text-center px-3 mx-2 my-1"
     />
   );
 }
