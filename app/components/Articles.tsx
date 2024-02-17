@@ -40,9 +40,9 @@ const Articles = (props: ArticlesType) => {
             </div>
             <h2 className="text-xl font-bold mt-2 mb-5">{article.title}</h2>
             <div className="flex justify-between">
-              <div className="flex mx-12">
+              <div className="flex md:flex-col mx-12">
                 {article.tags.map((tag) => (
-                  <h3 key={tag.name} className="p-3 bg-lime-300 mx-1 rounded-xl shadow">
+                  <h3 key={tag.name} className="p-3 bg-lime-300 mx-1 md:my-1 rounded-xl shadow">
                     {tag.name}
                   </h3>
                 ))}
